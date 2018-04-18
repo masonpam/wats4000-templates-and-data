@@ -9,7 +9,7 @@
 
     <ul>
       <li class="movie-item" v-for="result in results">
-        <img v-bind:src="'https://image.tmdb.org/t/p/w150_and_h225_bestv2/' + result.poster_path" v-bind:alt="result.title" class="poster-image">
+        <img v-bind:src="'https://image.tmdb.org/t/p/w150_and_h225_bestv2' + result.poster_path" v-bind:alt="result.title" class="poster-image">
         <h2 class="title"><a v-bind:href="'https://www.themoviedb.org/movie/' + result.id">{{ result.title }}</a></h2>
         <div class="ratings">
           <span class="rating-category critics-choice" v-if="result.vote_average > 8">Critic's Choice</span>
